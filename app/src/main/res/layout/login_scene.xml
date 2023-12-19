@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    tools:context=".registros.Registro_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:elevation="30dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="200dp"
+        android:background="#FFFFFF"
+        android:elevation="15dp"
+        android:scrollbarStyle="insideInset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextNomeCliente"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Nome do Cliente"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextDocumento"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Documento do Cliente"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNomeCliente"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextIdCliente"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Id do Cliente"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDocumento"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextRg"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Rg do Cliente"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextIdCliente"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextTelefone"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Telefone do Cliente"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRg"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextCelular"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Celular do Cliente"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTelefone"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Email do Cliente"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCelular"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextUc"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Unidade de Consumidora do Cliente"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextContrato"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Data de contrato do Cliente"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextUc"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextCorte"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Data do corte do cliente"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextContrato"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextEndereçoRua"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Endereço ou Rua do Cliente"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCorte"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextCep"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Cep do Cliente"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEndereçoRua"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextBairro"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Bairro do Cliente"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCep"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextEtapa"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Etapa do serviço (?)"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextBairro"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextCidade"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Cidade do Cliente"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEtapa"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextEstado"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Estado do Cliente"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCidade"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextTarifa"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Tarifa do serviço"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEstado"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextClassePrincipal"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="ClassePrincipal do (?)"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTarifa"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextMunicipio"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Municipio do Cliente"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextClassePrincipal"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextLocaliza"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Localiza (?)"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMunicipio"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextNIS"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="NIS do Cliente"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextLocaliza"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextCNPJ"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Cnpj/Cnpj da UC do Cliente"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNIS"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextFatura"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Fatura do serviço"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCNPJ"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextTotalFatura"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Total da fatura do serviço"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextFatura"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextEquipamentoCod"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Código dos equipamentos"
+                android:inputType="number"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTotalFatura"
+                tools:ignore="HardcodedText,PxUsage" />
+
+            <EditText
+                android:id="@+id/editTextProtocolo"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:hint="Protocolos feitos no serviço"
+                android:inputType="textLongMessage"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEquipamentoCod"
+                tools:ignore="HardcodedText,PxUsage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/ElektroLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:src="@mipmap/elektro_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TesteLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="70dp"
+        android:text="Teste: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ElektroLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
